@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brienzatech</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="assets/logo.png" alt="Logo brienzatech" class="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Área de Boas-vindas com Imagem de Fundo -->
+    <section id="welcome">
+      <div class="welcome-content">
+        <h2>BEM-VINDO AO BRIENZATECH</h2>
+        <p>Explorando o mundo dos dispositivos com reviews, <br> insights e muito mais.</p>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre">
+      <div class="section-content">
+        <h2>Sobre Nós</h2>
+        <p>Na brienzatech, somos apaixonados por tecnologia e dispositivos.  <br>
+          Nossa missão é fornecer avaliações detalhadas e imparciais para  <br>
+          ajudar você a tomar decisões informadas.</p>
+        <img src="assets/sobre.jpg" alt="Sobre nós" class="section-image">
+      </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos">
+      <div class="section-content">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+          <div class="service">
+            <i class="fas fa-laptop"></i>
+            <h3>Revisões de Dispositivos</h3>
+            <p>Analisamos os últimos gadgets e dispositivos para fornecer avaliações detalhadas.</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-chart-line"></i>
+            <h3>Insights de Mercado</h3>
+            <p>Oferecemos insights sobre as tendências atuais do mercado de tecnologia.</p>
+          </div>
+          <div class="service">
+            <i class="fas fa-headphones"></i>
+            <h3>Suporte ao Cliente</h3>
+            <p>Nossa equipe está sempre pronta para ajudar com qualquer dúvida ou problema.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+      <div class="section-content">
+        <h2>Contato</h2>
+        <form action="enviar_formulario.php" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2024 brienzatech - Todos os direitos reservados</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
